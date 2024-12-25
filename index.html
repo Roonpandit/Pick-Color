@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">Color Picker Tool</h1>
+        <input type="color" id="colorPicker" class="color-input zoom-in">
+        <div class="color-info">
+            <label for="hexValue">Hexadecimal: </label>
+            <input type="text" id="hexValue" readonly>
+            <button id="copyHex" class="copy-btn">Copy Hex</button>
+        </div>
+        <div class="color-info">
+            <label for="rgbValue">RGB: </label>
+            <input type="text" id="rgbValue" readonly>
+            <button id="copyRGB" class="copy-btn">Copy RGB</button>
+        </div>
+        <button id="invertButton" class="invert-btn">Invert Color</button>
+        <div class="history">
+            <h2>Color History</h2>
+            <ul id="colorHistory" class="history-list"></ul>
+        </div>
+        <div id="notification" class="notification"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

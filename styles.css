@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.color-input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.color-input:hover {
+    transform: scale(1.05);
+}
+
+.color-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.copy-btn, .invert-btn {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copy-btn:hover, .invert-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.invert-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.history {
+    margin-top: 30px;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+}
+
+.history-list li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.notification {
+    margin-top: 20px;
+    font-size: 14px;
+    color: green;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.zoom-in {
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
